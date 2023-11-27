@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/655a9d9791e5c13bb5b1b423/1hfkvf6dn';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:70px; padding-top: 30px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MUARPANDA</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+     <div class="nav nav-tabs align-items-center col-md-7" id="nav-tab" role="tablist">
+         <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style="font-size:3vh;">Home</button>
+         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-product" type="button" role="tab" aria-controls="nav-product" aria-selected="false" style="font-size:3vh;">Product</button>
+         <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-order" type="button" role="tab" aria-controls="nav-order" aria-selected="false" style="font-size:3vh;">Order</button>
+        </div>
+      </nav>
+      <div class="tab-content bg-light" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="header1" style="text-align:center ; font-size: 8vh; text-shadow:10px; padding-top: 15px; text-shadow: 2px 2px #006eff; font-weight:800;">
+          DASHBOARD
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4"style="padding:20px 20px">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-weight:600; text-align:center; font-size:30px" >Orders</h5>
+                  <p class="border">Num</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-weight:600; text-align:center; font-size:30px">Products</h5>
+                  <p class="border">Num</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="card-title"style="font-weight:600; font-color:orange; text-align:center; font-size:30px">Messages</div>
+                  <p class="border">Num</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-product" role="tabpanel" aria-labelledby="nav-product-tab">
+          <div class="product"style="background-color:bg-light">
+          <div class="card text-center" style="height:120px; width:auto; margin: 30px 30px;">
+            <div class="card-body">
+              <h5 class="card-title"><b>New order</b></h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                ADD PRODUCT
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">NEW PRODUCT</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label">Update your product image</label>
+                        <input class="form-control" type="file" id="formFile">
+                        <div class="col-12 align-items-center">
+                          <label for="inputproductname" class="form-label">Product name</label>
+                          <input type="productname" class="form-control" id="inputproductname" placholder="Product name">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputproductdesc" class="form-label">Description</label>
+                          <input type="productdesc" class="form-control" id="inputproductdesc" placholder="Product description">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPrice" class="form-label">Price (RM)</label>
+                          <input type="float" class="form-control" id="inputPrice">
+                        </div>
+                        <div class="col-4">
+                          <div class="form-check" style="padding-top: 20px;">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                             Reservation
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                             Takeaway
+                            </label>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card text-center" style="height:200px; width:auto; margin: 30px 30px; padding-bottom: 10px;" >
+            <div class="card-body">
+              <h5 class="card-title"><b>Product 1</b></h5>
+              <p class="card-text">Nasi Lemak</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Delete Product
+              </button>
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel2">Comfirmation</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Are you sure to delete the product?
+                      This action cannot be back!!!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger">Delete Product</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card text-center" style="height:200px; width:auto; margin: 30px 30px; padding-bottom: 10px">
+            <div class="card-body">
+              <h5 class="card-title"><b>Product 2</b></h5>
+              <p class="card-text">Chicken Rice</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                Delete Product
+              </button>
+              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel3">Comfirmation</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Are you sure to delete the product?
+                      This action cannot be back!!!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger">Delete Product</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="nav-order" role="tabpanel" aria-labelledby="nav-order-tab">
+        <div class="product"style="background-color:bg-light">
+          <div class="card text-center" style="height:150px; width:auto; margin: 30px 30px;">
+            <div class="card-body" >
+              <h5 class="card-title"><b>Order 1</b></h5>
+              <p class="card-text">Nasi Pataya campur papaya</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                Delete Order
+              </button>
+              <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel4">Comfirmation</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Are you sure to cancel this order?
+                      This action cannot be back!!!
+                      <p>Please make sure that you have get comfirmation from the buyer </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger">Cancel Order</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card text-center" style="height:150px; width:auto; margin: 30px 30px;" >
+            <div class="card-body">
+              <h5 class="card-title"><b>Order 2</b></h5>
+              <p class="card-text">Nasi Lemak</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                Delete Order
+              </button>
+              <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel5">Comfirmation</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Are you sure to cancel this order?
+                      This action cannot be back!!!
+                      <p>Please make sure that you have get comfirmation from the buyer </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger">Cancel Order</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card text-center" style="height:150px; width:auto; margin: 30px 30px;">
+            <div class="card-body">
+              <h5 class="card-title"><b>Order 3</b></h5>
+              <p class="card-text">Chicken Rice</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                Delete Order
+              </button>
+              <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel6">Comfirmation</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Are you sure to cancel this order?
+                      This action cannot be back!!!
+                      <p>Please make sure that you have get comfrrmation from the buyer </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger">Cancel Order</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
