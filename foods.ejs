@@ -1,0 +1,54 @@
+<!-- views/foods.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Data</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Food Data</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% foods.forEach(food => { %>
+        <tr>
+          <td><%= food.name || 'N/A' %></td>
+          <td><%= food.price || 'N/A' %></td>
+          <td>
+            <% if (food && food._id) { %>
+              <form method="post" action="/delete">
+                <input type="hidden" name="id" value="<%= food._id %>">
+                <button type="submit">Delete</button>
+              </form>
+            <% } else { %>
+              <span>No ID available</span>
+            <% } %>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>
